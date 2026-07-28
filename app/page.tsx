@@ -63,7 +63,7 @@ export default function Home() {
         <section id="work" className="py-20 space-y-12">
           <div className="flex items-end justify-between border-b border-cyan-900/30 pb-4">
             <h2 className="text-2xl font-bold tracking-widest text-fuchsia-400 drop-shadow-[0_0_8px_rgba(232,121,249,0.6)]">
-              // YOUR_PROJECTS
+              {"// YOUR_PROJECTS"}
             </h2>
             <span className="text-xs font-mono text-cyan-700">Showcase what you&apos;ve built with style</span>
           </div>
