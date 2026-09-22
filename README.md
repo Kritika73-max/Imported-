@@ -165,6 +165,26 @@ Found a bug or have an improvement idea? Contributions are welcome!
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
 ---
+## 🌱 Good First Issue: Project Scaffolding
+
+**Difficulty:** Beginner-friendly
+
+Gitfolio is just getting started! This issue is about laying the foundation
+so future contributors have something to build on.
+
+**What to do:**
+- Set up the basic project structure (e.g., `src/`, `public/`, `README.md`, `.gitignore`)
+- Initialize the project with your chosen stack (e.g., `npm init` for Node,
+  or a simple `index.html` for a static site)
+- Add a basic "Hello, Gitfolio" landing page or entry point
+- Include setup instructions in the README (how to install & run locally)
+
+**Steps to contribute:**
+1. Fork the repo and clone it locally
+2. Create a new branch: `git checkout -b setup/project-structure`
+3. Add the scaffolding and a short "Getting Started" section to the README
+4. Commit with a clear message
+5. Push and open a Pull Request
 
 ## 📄 License
 
