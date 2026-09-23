@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -173,6 +175,7 @@ export default function Home() {
                 <SocialLink href="https://github.com" label="GITHUB" />
                 <SocialLink href="https://linkedin.com" label="LINKEDIN" />
                 <SocialLink href="https://twitter.com" label="TWITTER" />
+                <CopyEmailButton email="clumzzy4@gmail.com" />
               </div>
             </div>
           </div>
@@ -239,6 +242,28 @@ function SocialLink({ href, label }: { href: string, label: string }) {
     >
       {label}
     </a>
+  );
+}
+function CopyEmailButton({ email }: { email: string }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy email:", err);
+    }
+  };
+
+  return (
+    <button
+      onClick={handleCopy}
+      className="text-xs font-bold tracking-widest text-cyan-700 hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all"
+    >
+      {copied ? "COPIED!" : "COPY EMAIL"}
+    </button>
   );
 }
 
